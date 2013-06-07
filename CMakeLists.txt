@@ -1,13 +1,26 @@
-cmake_minimum_required(VERSION 2.4.6)
-include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
+# http://ros.org/doc/groovy/api/catkin/html/user_guide/supposed.html
+cmake_minimum_required(VERSION 2.8.3)
+project(map_msgs)
+find_package(catkin REQUIRED COMPONENTS std_msgs sensor_msgs nav_msgs message_generation)
 
-rosbuild_init()
 
-rosbuild_make_distribution(0.0.1)
+add_message_files(
+  FILES
+  OccupancyGridUpdate.msg
+  PointCloud2Update.msg
+  ProjectedMapInfo.msg
+  ProjectedMap.msg
+)
+add_service_files(
+  FILES
+  GetMapROI.srv
+  GetPointMapROI.srv
+  GetPointMap.srv
+  ProjectedMapsInfo.srv
+  SaveMap.srv
+  SetMapProjections.srv
+)
 
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+generate_messages(DEPENDENCIES std_msgs sensor_msgs nav_msgs)
 
-rosbuild_genmsg()
-rosbuild_gensrv()
-
+catkin_package(CATKIN_DEPENDS std_msgs sensor_msgs nav_msgs)
