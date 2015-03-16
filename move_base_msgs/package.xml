@@ -11,7 +11,8 @@
     <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
     <maintainer email="mferguson@fetchrobotics.com">Michael Ferguson</maintainer>
     <license>BSD</license>
-    <url>http://wiki.ros.org/move_base_msgs</url>
+    <url type="website">http://wiki.ros.org/move_base_msgs</url>
+    <url type="bugtracker">https://github.com/ros-planning/navigation_msgs/issues</url>
 
     <buildtool_depend>catkin</buildtool_depend>
 
