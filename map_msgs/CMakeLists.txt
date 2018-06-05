@@ -1,41 +1,45 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
+
 project(map_msgs)
 
-find_package(catkin REQUIRED
-  COMPONENTS
-    std_msgs
-    sensor_msgs
-    nav_msgs
-    message_generation
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  # we dont use add_compile_options with pedantic in message packages
+  # because the Python C extensions dont comply with it
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
+endif()
+
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+
+set(msg_files
+  "msg/OccupancyGridUpdate.msg"
+  "msg/PointCloud2Update.msg"
+  "msg/ProjectedMapInfo.msg"
+  "msg/ProjectedMap.msg"
+)
+set(srv_files
+  "srv/GetMapROI.srv"
+  "srv/GetPointMapROI.srv"
+  "srv/GetPointMap.srv"
+  "srv/ProjectedMapsInfo.srv"
+  "srv/SaveMap.srv"
+  "srv/SetMapProjections.srv"
+)
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  DEPENDENCIES nav_msgs sensor_msgs std_msgs
+  ADD_LINTER_TESTS
 )
 
-add_message_files(
-  FILES
-    OccupancyGridUpdate.msg
-    PointCloud2Update.msg
-    ProjectedMapInfo.msg
-    ProjectedMap.msg
-)
-add_service_files(
-  FILES
-    GetMapROI.srv
-    GetPointMapROI.srv
-    GetPointMap.srv
-    ProjectedMapsInfo.srv
-    SaveMap.srv
-    SetMapProjections.srv
-)
+ament_export_dependencies(rosidl_default_runtime)
 
-generate_messages(
-  DEPENDENCIES
-    std_msgs
-    sensor_msgs
-    nav_msgs
-)
-
-catkin_package(
-  CATKIN_DEPENDS
-    std_msgs
-    sensor_msgs
-    nav_msgs
-)
+ament_package()
