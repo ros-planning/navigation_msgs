@@ -3,11 +3,11 @@
     <version>1.13.0</version>
     <description>
 
-        Holds the action description and relevant messages for the move_base package
+        Holds the action description and relevant messages for the move_base package.
 
     </description>
     <author>Eitan Marder-Eppstein</author>
-    <author>contradict@gmail.com</author>
+    <author email="contradict@gmail.com">contradict@gmail.com</author>
     <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
     <maintainer email="mferguson@fetchrobotics.com">Michael Ferguson</maintainer>
     <license>BSD</license>
