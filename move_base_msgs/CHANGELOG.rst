@@ -2,6 +2,10 @@
 Changelog for package move_base_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Contributors: William Woodall
+
 1.13.0 (2015-03-16)
 -------------------
 * initial release from new repository
