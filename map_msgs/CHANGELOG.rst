@@ -2,8 +2,8 @@
 Changelog for package map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2018-06-27)
+------------------
 * Added missing ``---`` separator in services. (`#5 <https://github.com/ros-planning/navigation_msgs/issues/5>`_)
 * Changed to use ``std_msgs/Header`` instead of just ``Header``.
 * Ported ``map_msgs`` to ROS 2.
