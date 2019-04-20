@@ -2,8 +2,8 @@
 Changelog for package map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2019-04-19)
+------------------
 * Changed cmake code to use ``add_compile_options`` instead of setting only cxx flags.
 * Contributors: Mikael Arguedas
 
