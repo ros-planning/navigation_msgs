@@ -2,6 +2,11 @@
 Changelog for package map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Changed cmake code to use ``add_compile_options`` instead of setting only cxx flags.
+* Contributors: Mikael Arguedas
+
 2.0.0 (2018-06-27)
 ------------------
 * Added missing ``---`` separator in services. (`#5 <https://github.com/ros-planning/navigation_msgs/issues/5>`_)
