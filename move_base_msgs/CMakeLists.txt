@@ -1,25 +1,17 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(move_base_msgs)
 
-find_package(catkin REQUIRED
-  COMPONENTS
-    message_generation
-    actionlib_msgs
-    geometry_msgs
+find_package(ament_cmake REQUIRED)
+
+find_package(action_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "action/MoveBase.action"
+  DEPENDENCIES action_msgs geometry_msgs
 )
 
-add_action_files(
-  DIRECTORY
-    action
-  FILES
-    MoveBase.action
-)
+ament_export_dependencies(rosidl_default_runtime)
 
-generate_messages(
-  DEPENDENCIES
-    actionlib_msgs
-    geometry_msgs
-)
-
-catkin_package(
-)
+ament_package()
