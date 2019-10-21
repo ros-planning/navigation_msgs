@@ -3,10 +3,10 @@ project(map_msgs)
 
 find_package(catkin REQUIRED
   COMPONENTS
-    std_msgs
-    sensor_msgs
-    nav_msgs
     message_generation
+    nav_msgs
+    sensor_msgs
+    std_msgs
 )
 
 add_message_files(
@@ -28,14 +28,15 @@ add_service_files(
 
 generate_messages(
   DEPENDENCIES
-    std_msgs
-    sensor_msgs
     nav_msgs
+    sensor_msgs
+    std_msgs
 )
 
 catkin_package(
   CATKIN_DEPENDS
-    std_msgs
-    sensor_msgs
+    message_runtime
     nav_msgs
+    sensor_msgs
+    std_msgs
 )

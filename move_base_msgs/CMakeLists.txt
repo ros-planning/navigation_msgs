@@ -3,9 +3,9 @@ project(move_base_msgs)
 
 find_package(catkin REQUIRED
   COMPONENTS
-    message_generation
     actionlib_msgs
     geometry_msgs
+    message_generation
 )
 
 add_action_files(
@@ -22,4 +22,5 @@ generate_messages(
 )
 
 catkin_package(
+    CATKIN_DEPENDS actionlib_msgs geometry_msgs message_runtime
 )
