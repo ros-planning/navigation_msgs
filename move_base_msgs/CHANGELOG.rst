@@ -2,8 +2,8 @@
 Changelog for package move_base_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.14.0 (2020-03-10)
+-------------------
 * Bump CMake version to avoid CMP0048
   Signed-off-by: Shane Loretz <sloretz@osrfoundation.org>
 * Contributors: Shane Loretz
