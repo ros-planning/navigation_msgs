@@ -21,6 +21,7 @@ add_service_files(
     GetMapROI.srv
     GetPointMapROI.srv
     GetPointMap.srv
+    LoadMap.srv
     ProjectedMapsInfo.srv
     SaveMap.srv
     SetMapProjections.srv
