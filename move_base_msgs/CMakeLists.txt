@@ -8,6 +8,15 @@ find_package(catkin REQUIRED
     message_generation
 )
 
+# msgs
+add_message_files(
+  DIRECTORY
+    msg
+  FILES
+    RecoveryStatus.msg
+)
+
+# actions
 add_action_files(
   DIRECTORY
     action
