@@ -10,6 +10,7 @@
     <author email="contradict@gmail.com">contradict@gmail.com</author>
     <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
     <maintainer email="mferguson@fetchrobotics.com">Michael Ferguson</maintainer>
+    <maintainer email="mabel@openrobotics.org">Mabel Zhang</maintainer>
     <license>BSD</license>
     <url type="website">http://wiki.ros.org/move_base_msgs</url>
     <url type="bugtracker">https://github.com/ros-planning/navigation_msgs/issues</url>
