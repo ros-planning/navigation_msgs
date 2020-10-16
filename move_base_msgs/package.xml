@@ -13,6 +13,7 @@
     <author email="davidvlu@gmail.com">David V. Lu!!</author>
     <author email="mferguson@fetchrobotics.com">Michael Ferguson</author>
     <maintainer email="stevenmacenski@gmail.com">Steve Macenski</maintainer>
+    <maintainer email="mabel@openrobotics.org">Mabel Zhang</maintainer>
     <license>BSD</license>
     <url type="website">http://wiki.ros.org/move_base_msgs</url>
     <url type="bugtracker">https://github.com/ros-planning/navigation_msgs/issues</url>
