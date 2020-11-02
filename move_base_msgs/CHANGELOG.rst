@@ -2,8 +2,8 @@
 Changelog for package move_base_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.14.1 (2020-11-02)
+-------------------
 * Merge pull request `#19 <https://github.com/ros-planning/navigation_msgs/issues/19>`_ from ros-planning/recovery_behavior_msg
   Recovery behavior msg
 * Contributors: David V. Lu, David V. Lu!!, Peter Mitrano
