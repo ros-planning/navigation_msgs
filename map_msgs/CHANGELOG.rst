@@ -2,6 +2,9 @@
 Changelog for package map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1.14.0 (2020-03-10)
 -------------------
 * Bump CMake version to avoid CMP0048

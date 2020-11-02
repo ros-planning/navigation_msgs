@@ -2,6 +2,12 @@
 Changelog for package move_base_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#19 <https://github.com/ros-planning/navigation_msgs/issues/19>`_ from ros-planning/recovery_behavior_msg
+  Recovery behavior msg
+* Contributors: David V. Lu, David V. Lu!!, Peter Mitrano
+
 1.14.0 (2020-03-10)
 -------------------
 * Bump CMake version to avoid CMP0048
