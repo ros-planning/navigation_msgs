@@ -2,6 +2,11 @@
 Changelog for package map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update maintainers
+* Contributors: Mabel Zhang, Steve Macenski
+
 2.0.2 (2019-09-30)
 ------------------
 
