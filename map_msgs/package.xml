@@ -8,13 +8,16 @@
     <description>
         This package defines messages commonly used in mapping packages.
     </description>
-    <author>Stéphane Magnenat</author>
     <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
     <maintainer email="mferguson@fetchrobotics.com">Michael Ferguson</maintainer>
+    <maintainer email="michael.jeronimo@openrobotics.org">Michael Jeronimo</maintainer>
     <maintainer email="stevenmacenski@gmail.com">Steve Macenski</maintainer>
-    <maintainer email="mabel@openrobotics.org">Mabel Zhang</maintainer>
 
     <license>BSD</license>
+
+    <author email="mabel@openrobotics.org">Mabel Zhang</author>
+    <author>Stéphane Magnenat</author>
+
     <url type="website">http://ros.org/wiki/map_msgs</url>
     <url type="bugtracker">https://github.com/ros-planning/navigation_msgs/issues</url>
 
