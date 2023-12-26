@@ -2,8 +2,8 @@
 Changelog for package map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.4.0 (2023-12-26)
+------------------
 * Update to C++17
 * Contributors: Chris Lalancette, Steve Macenski
 
