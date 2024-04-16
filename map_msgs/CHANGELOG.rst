@@ -2,6 +2,11 @@
 Changelog for package map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update maintainer list in package.xml files
+* Contributors: Michael Jeronimo, Steve Macenski
+
 2.4.0 (2023-12-26)
 ------------------
 * Update to C++17
