@@ -1,6 +1,6 @@
 <package>
     <name>map_msgs</name>
-    <version>1.14.1</version>
+    <version>1.14.2</version>
     <description>
         This package defines messages commonly used in mapping packages.
     </description>
