@@ -2,6 +2,12 @@
 Changelog for package map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Change email address associated with maintainer
+* fix cmake deprecation
+* Contributors: David V. Lu, Steve Macenski, mosfet80
+
 2.6.0 (2025-04-28)
 ------------------
 
